@@ -1,0 +1,10 @@
+.idea
+/.idea
+/.test.py
+/*.pkl
+/*.csv
+/staticfiles/
+/uploads/
+/.log
+/tmp/
+/db.sqlite3
