@@ -1,0 +1,304 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}|About Me{% endblock %}
+{% block info %}
+{% endblock %}
+{% block apllication_download_master %}
+{% endblock %}
+{% block resume_file %}
+    <a href="{% static 'assets/pdf/resume_navid_soleymani.pdf' %}" target="_blank"
+       class="btn btn-primary d-none d-md-inline-block"><i class="fas fa-book"></i> Resume File</a>
+{% endblock %}
+{% block main_body %}
+    <!-- Hero -->
+    <div class="section section-header pb-7">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 text-center">
+                    <h1 class="display-2 mb-4">About Me</h1>
+                    <p class="lead mb-5">
+                        Programmer, data analyst and interested in the topics of intelligence and artificial
+                        intelligence,
+                        interested in problem solving and design of complex algorithms, interested in designing applied
+                        data structures,
+                        strong mathematical foundation, interested in working in a group work environment and learning
+                        new things.
+                    </p>
+                    <a class="btn btn-primary" href="{% url 'home:home' %}"><span class="fas fa-book-reader mr-2"></span>My
+                        works</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Hero section -->
+    <section class="section section-lg pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-primary shadow-soft border-light p-4">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 px-md-0 mb-4 mb-lg-0">
+                                <div class="card-body text-center bg-primary py-5">
+                                    <div class="icon icon-shape shadow-inset border-light rounded-circle mb-3">
+                                        <span class="far fa-eye"></span>
+                                    </div>
+                                    <!-- Heading -->
+                                    <h2 class="h4 mr-2">
+                                        AI
+                                    </h2>
+                                    <!-- Text -->
+                                    <p class="mb-0">
+                                        My job is to make cars smarter. Machine Learning, Statistical Pattern
+                                        Recognition, Artificial Neural Networks, Meta-Innovative Algorithms, Data
+                                        Mining, etc. are among the important topics in this field.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 px-md-0 mb-4 mb-lg-0">
+                                <div class="card-body text-center bg-primary py-5">
+                                    <div class="icon icon-shape shadow-inset border-light rounded-circle mb-3">
+                                        <span class="fas fa-medal"></span>
+                                    </div>
+                                    <!-- Heading -->
+                                    <h2 class="h4 mr-2">
+                                        Mathematics
+                                    </h2>
+                                    <!-- Text -->
+                                    <p class="mb-0">
+                                        A strong Mathematical foundation is needed in my work. Numerical Mathematics,
+                                        Statistics and Probability, Numerical Linear Algebra, Topology, etc.
+                                        are among the required specialties in this field.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 px-md-0">
+                                <div class="card-body text-center bg-primary py-5">
+                                    <div class="icon icon-shape shadow-inset border-light rounded-circle mb-3">
+                                        <span class="fas fa-puzzle-piece"></span>
+                                    </div>
+                                    <!-- Heading -->
+                                    <h2 class="h4 mr-2">
+                                        NLP
+                                    </h2>
+                                    <!-- Text -->
+                                    <p class="mb-0">
+                                        I am interested in advancing more and better in the science of Natural Language
+                                        Processing. Keywords Extraction, Text Similarity, NER, etc. are among the topics
+                                        active in this trend of science.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section -->
+    <section class="section section-lg pt-0">
+        <div class="container">
+            <div class="row align-items-center justify-content-around">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <!-- Profile Card -->
+                    <div class="card bg-primary shadow-soft border-light">
+                        <div class="card-header p-4">
+                            <img src="/static/assets/img/navidsoleymani-2.jpg" class="card-img-top rounded"
+                                 alt="Wood Portrait">
+                        </div>
+                        <div class="card-body pt-2">
+                            <h3 class="h5 mb-2">Navid Soleymani</h3>
+                            <span class="h6 font-weight-normal text-gray mb-4">Programmer</span>
+                            <p class="card-text">Interested in solving complex problems and designing algorithms.</p>
+                            <ul class="list-unstyled d-flex my-3">
+                                <li>
+                                    <a href="#" target="_blank" aria-label="telegram social link"
+                                       class="icon icon-xs icon-telegram mr-3">
+                                        <span class="fab fa-telegram-plane"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="twitter social link"
+                                       class="icon icon-xs icon-twitter mr-3">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="linkedin social link"
+                                       class="icon icon-xs icon-linkedin mr-3">
+                                        <span class="fab fa-linkedin-in"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="whatsapp social link"
+                                       class="icon icon-xs icon-whatsapp mr-3">
+                                        <span class="fab fa-whatsapp"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End of Profile Card -->
+                </div>
+                <div class="col-md-6 col-xl-5 text-center text-md-left">
+                    <h2 class="h1 mb-4">Programmer, Algorithms Designer.</h2>
+                    <p class="lead">I am Navid Soleimani. I received my bachelor's degree in applied mathematics from
+                        Hakim Sabzevari University. Then I studied at Shahroud University of Technology to get a
+                        master's degree in artificial intelligence.</p>
+                    <p class="lead">During my studies, in addition to studying, I was engaged in programming and
+                        designing websites and applications. I'm interested in algorithm design and problem solving, and
+                        I prefer to do this important thing with the Python programming language. Although I am familiar
+                        with C, C ++, MATLAB, R, Java languages, my preference is Python.</p>
+                    <div class="mt-4" width="150">
+                        NVD
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of section -->
+    <!-- Section -->
+    <section class="section section-lg pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Python</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Django</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Flask</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Fast API</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">MySQL</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">PostgreSQL</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Neo4j</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Redis</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">HTML</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Manjaro</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">AI</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Data Mining</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Natural Language Processing</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Deep Learning</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Applied Mathematics</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Statistical & Probability</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 text-center">
+                    <div class="icon-box mb-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="far fa-smile-beam"></span>
+                        </div>
+                        <h3 class="h5">Topology</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>>
+{% endblock %}
