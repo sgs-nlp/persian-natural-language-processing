@@ -28,8 +28,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'home.apps.PlpIndexConfig',
+    'about_me.apps.PlpAboutMeConfig',
+    'contact_me.apps.PlpContactMeConfig',
+
     'prerequisites.apps.PrerequisitesConfig',
-    'plp_index.apps.PlpIndexConfig',
     'classifications.apps.ClassificationsConfig',
     'keywords_extractions.apps.KeywordsExtractionsConfig',
     'stopwords_lists.apps.StopwordsListsConfig',
@@ -37,8 +40,8 @@ INSTALLED_APPS = [
     'template_views.apps.TemplateViewsConfig',
 ]
 
-MIDDLEWARE = [
-]
+MIDDLEWARE = []
+AUTH_PASSWORD_VALIDATORS = []
 
 ROOT_URLCONF = 'conf.urls'
 
