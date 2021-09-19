@@ -3,7 +3,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-                  path('', include('plp_index.urls')),
+                  path('', include('home.urls')),
+                  path('about-me', include('about_me.urls')),
+                  path('contact-me', include('contact_me.urls')),
 
                   path('template-view/', include('template_views.urls')),
 
