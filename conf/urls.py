@@ -4,15 +4,15 @@ from django.conf.urls.static import static
 
 urlpatterns = [
                   path('', include('home.urls')),
-                  path('about-me', include('about_me.urls')),
-                  path('contact-me', include('contact_me.urls')),
+                  path('about-me/', include('about_me.urls')),
+                  path('contact-me/', include('contact_me.urls')),
 
                   path('template-view/', include('template_views.urls')),
 
-                  path('prerequisite', include('prerequisites.urls')),
+                  path('prerequisite/', include('prerequisites.urls')),
                   path('api/prerequisite/', include('prerequisites.apis.urls')),
 
-                  path('classification', include('classifications.urls')),
+                  path('classification/', include('classifications.urls')),
                   path('api/classification/', include('classifications.apis.urls')),
 
                   path('extraction/keywords/', include('keywords_extractions.urls')),

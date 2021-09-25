@@ -25,8 +25,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'rest_framework',
+    'background_task',
 
     'home.apps.PlpIndexConfig',
     'about_me.apps.PlpAboutMeConfig',
@@ -38,9 +45,18 @@ INSTALLED_APPS = [
     'stopwords_lists.apps.StopwordsListsConfig',
     'similarities.apps.SimilaritiesConfig',
     'template_views.apps.TemplateViewsConfig',
+
 ]
 
-MIDDLEWARE = []
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
 AUTH_PASSWORD_VALIDATORS = []
 
 ROOT_URLCONF = 'conf.urls'
@@ -55,6 +71,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
         },
@@ -100,6 +117,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+FILE_ROOT = os.path.join(MEDIA_ROOT, 'file')
+EXTRACT_ROOT = os.path.join(FILE_ROOT, 'extract')
+DB2FILE_ROOT = os.path.join(EXTRACT_ROOT, 'db')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -117,3 +137,8 @@ logging.basicConfig(
 
 # cashing
 BASE_DICT = BaseDict()
+
+# django rest frameword
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'nvd.paginators.StandardResultsSetPagination',
+}
